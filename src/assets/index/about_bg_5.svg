@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_1" data-name="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 80.56 125.53">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1 {
+        isolation: isolate;
+      }
+
+      .st2 {
+        fill: #ed781e;
+      }
+
+      .st3 {
+        clip-path: url(#clippath-1);
+      }
+
+      .st4 {
+        fill: url(#_未命名漸層_5);
+      }
+
+      .st5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" x="-696.81" y="-649.52" width="1920" height="233.66"/>
+    </clipPath>
+    <linearGradient id="_未命名漸層_5" data-name="未命名漸層 5" x1="6151.69" y1="13339.48" x2="7715.88" y2="13339.48" gradientTransform="translate(-5366.88 13560.23) rotate(-132.77)" gradientUnits="userSpaceOnUse">
+      <stop offset=".2" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".23" stop-color="#fff" stop-opacity=".06"/>
+      <stop offset=".43" stop-color="#fff" stop-opacity=".39"/>
+      <stop offset=".61" stop-color="#fff" stop-opacity=".65"/>
+      <stop offset=".75" stop-color="#fff" stop-opacity=".84"/>
+      <stop offset=".86" stop-color="#fff" stop-opacity=".96"/>
+      <stop offset=".92" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="clippath-1">
+      <polygon class="st0" points="1.91 79.72 2.18 -15.8 77.01 27.4 76.74 122.92 1.91 79.72"/>
+    </clipPath>
+  </defs>
+  <g class="st5">
+    <path class="st4" d="M14.53-352.03c38.97-44.31,100.92-146.46,20.22-238.72-55.1-62.99-99.07-41.9-148.45-40.54-50.97,1.41-79.44-62.31-29.1-97.62C-.72-820.94,271.13-562.78,14.53-352.03ZM-252.07-648.56c-77.12,84.69-117.31,276.98,88.29,499.26h0S26.14,56.02,26.14,56.02c25.56,27.64,68.69,29.32,96.32,3.75,27.64-25.56,29.32-68.69,3.75-96.32L-127.76-311.12h0s-75.22-75.87-98.15-172.94c-14.5-61.37-16.43-130.26,25.65-211.72-16.19,11.16-35.97,29.82-51.81,47.22ZM-328.46-668.64c-65.41,70.35-92.79,228.45,29.02,365.84-87.32-187.94-12.59-368.37,128.56-436.68-42.93-2.51-111.48,21.25-157.59,70.85ZM-539.28-442.21c-14.24,14.98-13.75,46.3,17.97,53.09,14.84,2.36,26.85-4.34,38.04-7.49,66.91-18.83,99.99,2.13,134.26,46.4-65.81-133.61-163.91-119.11-190.27-92ZM-11.56-242.53c103.51-21.18,186.56-154.97,160.27-286.82-12.59,128.73-95.45,207.15-170.03,218.47-54.04,8.2-42.75,79.09,9.76,68.35Z"/>
+  </g>
+  <g class="st1">
+    <g class="st3">
+      <g>
+        <path class="st2" d="M39.6,5.8c-10.69-6.17-19.38-1.21-19.41,11.07s8.6,27.24,19.29,33.41,19.38,1.22,19.41-11.06S50.29,11.97,39.6,5.8"/>
+        <path class="st2" d="M44.54,61.54l-10.2-5.89C16.5,45.35,1.99,53.62,1.93,74.12l-.02,5.6,74.83,43.2.02-5.6c.06-20.51-14.36-45.48-32.21-55.79"/>
+      </g>
+    </g>
+  </g>
+</svg>

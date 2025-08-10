@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_1" data-name="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 494.32 288.7">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #ed781e;
+      }
+
+      .st1 {
+        fill: #231815;
+      }
+
+      .st2 {
+        fill: #fff;
+      }
+
+      .st3 {
+        fill: url(#_未命名漸層_7);
+      }
+
+      .st4 {
+        opacity: .1;
+      }
+
+      .st5 {
+        opacity: .4;
+      }
+
+      .st5, .st6 {
+        fill: #040000;
+      }
+
+      .st6 {
+        opacity: .2;
+      }
+
+      .st7 {
+        fill: #888;
+      }
+    </style>
+    <linearGradient id="_未命名漸層_7" data-name="未命名漸層 7" x1="502.99" y1="239.02" x2="502.99" y2="845.45" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".07" stop-color="#fdf5ef" stop-opacity=".97"/>
+      <stop offset=".22" stop-color="#faddc7" stop-opacity=".88"/>
+      <stop offset=".43" stop-color="#f5b686" stop-opacity=".73"/>
+      <stop offset=".68" stop-color="#ee822e" stop-opacity=".54"/>
+      <stop offset=".73" stop-color="#ed781e" stop-opacity=".5"/>
+      <stop offset=".73" stop-color="#ed7920" stop-opacity=".5"/>
+      <stop offset=".82" stop-color="#f4b280" stop-opacity=".5"/>
+      <stop offset=".89" stop-color="#fadcc5" stop-opacity=".5"/>
+      <stop offset=".96" stop-color="#fdf5ef" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".5"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g>
+      <polygon class="st0" points="0 110.95 51.71 162.66 51.71 77.35 0 110.95"/>
+      <polygon class="st7" points="373.41 0 421.53 48.12 343.97 55.83 373.41 0"/>
+      <polygon class="st7" points="0 110.95 51.71 162.66 51.71 77.35 0 110.95"/>
+      <polyline class="st5" points="277.03 55.83 306.47 0 354.59 48.12"/>
+      <g>
+        <path class="st2" d="M24.13,285.2V26.65h377.41c49.23,0,89.29,40.05,89.29,89.29v79.98c0,49.23-40.05,89.29-89.29,89.29H24.13Z"/>
+        <path class="st0" d="M401.54,30.15c47.3,0,85.79,38.48,85.79,85.79v79.98c0,47.3-38.48,85.79-85.79,85.79H27.63V30.15h373.91M401.54,23.15H20.63v265.55h380.91c51.24,0,92.79-41.54,92.79-92.79v-79.98c0-51.24-41.54-92.79-92.79-92.79h0Z"/>
+      </g>
+      <path class="st6" d="M20.63,28.31v91.69h286.51c30.44,0,55.12-24.68,55.12-55.12V28.31H20.63Z"/>
+      <path class="st0" d="M0,0v110.95h318.29c30.44,0,55.12-24.68,55.12-55.12V0H0Z"/>
+      <g class="st4">
+        <polygon class="st2" points="171.64 110.95 282.59 0 204.37 0 93.42 110.95 171.64 110.95"/>
+        <polygon class="st2" points="337.55 0 298.44 0 187.5 110.95 226.61 110.95 337.55 0"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+name: Deploy to Cloudways
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.14'
+
+      - name: Install Yarn
+        run: npm install -g yarn
+
+      - name: Create .env.production.local file
+        run: |
+          echo "NEXT_PUBLIC_SERVER_URL=${{ secrets.NEXT_PUBLIC_SERVER_URL }}" >> .env.production.local
+          echo "NEXT_PUBLIC_TITLE=${{ secrets.NEXT_PUBLIC_TITLE }}" >> .env.production.local
+          echo "NEXT_PUBLIC_DESCRIPTION=${{ secrets.NEXT_PUBLIC_DESCRIPTION }}" >> .env.production.local
+          echo "NEXT_PUBLIC_SITE=${{ secrets.NEXT_PUBLIC_SITE }}" >> .env.production.local
+          echo "NEXT_PUBLIC_TREND_SITE=${{ secrets.NEXT_PUBLIC_TREND_SITE }}" >> .env.production.local
+          echo "NEXT_PUBLIC_EMAIL_SERVICE_KEY=${{ secrets.NEXT_PUBLIC_EMAIL_SERVICE_KEY }}" >> .env.production.local
+          echo "NEXT_PUBLIC_EMAIL_TEMPLATE_KEY=${{ secrets.NEXT_PUBLIC_EMAIL_TEMPLATE_KEY }}" >> .env.production.local
+          echo "NEXT_PUBLIC_EMAIL_PUBLIC_KEY=${{ secrets.NEXT_PUBLIC_EMAIL_PUBLIC_KEY }}" >> .env.production.local
+          echo "NEXT_PUBLIC_ADVERTISING=${{ secrets.NEXT_PUBLIC_ADVERTISING }}" >> .env.production.local
+          echo "NEXT_PUBLIC_EVENT_PLANNING=${{ secrets.NEXT_PUBLIC_EVENT_PLANNING }}" >> .env.production.local
+          echo "NEXT_PUBLIC_SOCIAL_MEDIA=${{ secrets.NEXT_PUBLIC_SOCIAL_MEDIA }}" >> .env.production.local
+          echo "NEXT_PUBLIC_CIS=${{ secrets.NEXT_PUBLIC_CIS }}" >> .env.production.local
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build project
+        run: yarn build:prod:local
+
+      - name: Deploy to Cloudways
+        uses: roelmagdaleno/cloudways-api-git-pull-action@v1.3.0
+        with:
+          email: ${{ secrets.CLOUDWAYS_EMAIL }}
+          api-key: ${{ secrets.CLOUDWAYS_API_KEY }}
+          server-id: ${{ secrets.CLOUDWAYS_SERVER_ID }}
+          app-id: ${{ secrets.CLOUDWAYS_APP_ID }}
+          branch-name: 'main'
+          deploy-path: ''
