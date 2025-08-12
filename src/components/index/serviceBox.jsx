@@ -1,4 +1,5 @@
 import React from 'react'
+import { cn } from '@utils/cn';
 import styles from './css/serviceBox.module.css';
 import Link from 'next/link';
 import categoryMap from './categoryMap'
@@ -9,7 +10,7 @@ export default function ServiceBox() {
       data-title="more"
       key={index}
       href={category.sitemapUrl}
-      className={styles['container']}
+      className={cn(styles['container'], 'scale-75 md:scale-100')}
     >
       <div className='text-white text-[40px] font-[400] absolute top-[27px] left-[24px]'>
         {category.zn_title}

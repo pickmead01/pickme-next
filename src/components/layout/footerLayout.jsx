@@ -1,4 +1,6 @@
 import Logo from './logo';
+import { cn } from '@utils/cn';
+import { FaFacebookMessenger, FaFacebook, FaInstagram, FaSquareInstagram } from "react-icons/fa6";
 import usePathname from '@services/usePathname';
 import Link from 'next/link';
 
@@ -7,30 +9,22 @@ export default function FooterLayout() {
   const pathname = usePathname()
   const footerClassName = pathname === '/' ? 'index-footer' : ''
   return (
-    <footer className={`footer-wrapper ${footerClassName}`}>
-      <div className='footer-box'>
-        <div className='left-side'>
-          <Logo position='footer' color='white' />
-          <span>聯絡電話：(04)2201-0520</span>
-          <span>營業時間：周一至周五 9:00~18:00</span>
-          <span>服務地址：403518臺中市西區英才路530號23樓之5</span>
-          <span>E-mail：service@musense.tw</span>
+    <footer className={cn('footer-wrapper flex flex-col items-center justify-center bg-primary', footerClassName)}>
+      <div className='flex text-white text-[24px] md:text-[24px] font-[300] items-center justify-center px-[24px]'>
+        <div className='flex items-center justify-center divide-x-2'>
+        <div className="px-[16px]">痞米行銷</div>
+        <div className="px-[16px]">服務項目</div>
+        <div className="px-[16px]">聯絡我們</div>
+        <div className="px-[16px]">行銷趨勢</div>
         </div>
-        <div className='right-side'>
-          <div className='button-box'>
-            <div className='contact-us-btn' >
-              聯絡我們
-            </div>
-            <div className='social-btn-box'>
-              <Link title='musense facebook' href='https://www.facebook.com/musense.marketing' target='_blank' className='fb-icon' ></Link>
-              <Link title='musense instagram' href='https://www.instagram.com/musense.marketing/' target='_blank' className='ig-icon' ></Link>
-              {/* <div className={'mail-icon' /> */}
-            </div>
-          </div>
-          <span className='copyright'>
-            Copyright ©  陌聲行銷有限公司.<br /> All Rights Reserved.Design by 陌聲行銷
-          </span>
+        <div className='flex items-center justify-center gap-8 ml-6 flex-col md:flex-row'>
+          <FaFacebook size={56} />
+          <FaSquareInstagram size={56} />
         </div>
+      </div>
+      <div className='text-center flex items-center justify-center gap-4 flex-col text-[18px] font-[300] text-white mt-8'>
+        <div>Mail: service@pickme.tw</div>
+        <div>Copyright ©  2025 痞米行銷有限公司 Pickme Marketing Ltd.</div>
       </div>
     </footer>
   );

@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import styles from './css/contactUs.module.css';
 import Modal from "./modal";
+import { cn } from '@utils/cn';
 import sendEmail from "@services/emailService";
 import EnterBox from "./EnterBox";
 import CheckBoxList from './CheckBoxList';
@@ -87,7 +88,7 @@ export default function ContactUs() {
   }
 
   return (
-    <div id="contact" className={styles['contact-us-wrapper']}>
+    <div id="contact" className={cn(styles['contact-us-wrapper'], 'md:pb-[400px] pb-[200px]')}>
       {
         modalRoot && createPortal(
           <Modal
@@ -99,7 +100,18 @@ export default function ContactUs() {
           modalRoot
         )
       }
-      {contactUsImage && <Image
+      <div className="w-full relative">
+        <div className={cn(styles['bg1'], 'relative')}>
+          <div className='text-white flex flex-col items-start justify-center absolute top-[80px] left-[50vw] md:left-[300px] md:translate-x-0 translate-x-[-50%]'>
+            <div className="text-[60px] font-[500] md:text-[80px]">聯絡我們</div>
+            <div className="text-[24px] font-[400] md:text-[40px]">免費策略諮詢</div>
+            <div className="text-[24px] font-[200] md:text-[40px]">立即留下您的聯絡資訊</div>
+            <div className="text-[24px] font-[200] md:text-[40px]">我們將安排專業顧問與您接洽</div>
+          </div>
+        </div>
+        <div className={cn(styles['bg2'], 'hidden xl:block absolute right-0 bottom-0')}></div>
+      </div>
+      {/* {contactUsImage && <Image
         alt=""
         src={contactUsImage.default.src}
         width={contactUsImage.default.width}
@@ -108,9 +120,9 @@ export default function ContactUs() {
           width: '100%',
           objectFit: 'contain'
         }}
-      />}
+      />} */}
       <div className={styles['contact-us-content']}>
-        <div className={styles['img-wrapper']}>
+        {/* <div className={styles['img-wrapper']}>
           {imageDownImage && <Image
             alt=""
             className={styles['image-down']}
@@ -123,14 +135,14 @@ export default function ContactUs() {
             }}
           />}
           <div className={styles['orange-box']} />
-        </div>
+        </div> */}
         <form
           name='contactForm'
           className={styles['contact-us-form']}
           onSubmit={getFormData}
         >
 
-          <div className={styles['left-form']}>
+          <div className={cn(styles['left-form'], 'mb-[20px]')}>
             {
               enterBoxList.map((enterBox, index) => (
                 <EnterBox
@@ -159,13 +171,15 @@ export default function ContactUs() {
             />
             <button
               title='send button'
-              className={styles['send-button']}
+              className={cn(styles['send-button'], 'w-[180px] h-[80px] bg-primary text-white rounded-full text-[28px]')}
               type='submit'
-            />
+            >
+              送出
+            </button>
           </div>
-
         </form>
       </div>
+      <div className={cn(styles['bg3'], 'md:block hidden absolute bottom-[-33px] left-[24%]')}></div>
     </div>
   );
 }

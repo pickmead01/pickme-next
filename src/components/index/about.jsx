@@ -88,20 +88,20 @@ export default function About() {
             <div className={styles['bg10']} />
             <div className={styles['bg11']} />
             <div className='text-[76px]'>全方位行銷團隊</div>
-            <div className='text-[40px] font-[200] flex items-center mt-[28px]'>
+            <div className='text-[32px] md:text-[40px] font-[200] flex items-center mt-[28px]'>
               Pickme痞米團隊擁有
-              <div className='text-[36px] font-[600]'>多產業別</div>
+              <div className='md:text-[40px] text-[36px] font-[600]'>多產業別</div>
               服務經驗
             </div>
-            <div className='text-[40px] font-[200] flex items-center'>
+            <div className='md:text-[40px] text-[32px] font-[200] flex items-center'>
               執行
-              <div className='text-[36px] font-[600]'>數百間</div>
+              <div className='md:text-[40px] text-[36px] font-[600]'>數百間</div>
               品牌廣告、操盤
-              <div className='text-[36px] font-[600]'>上千萬</div>
+              <div className='md:text-[40px] text-[36px] font-[600]'>上千萬</div>
               行銷預算
             </div>
-            <div className='text-[40px] font-[200] mt-[28px]'>依產品特性打造專屬客製的行銷策略</div>
-            <div className='text-[40px] font-[200]'>從頭到尾一手包辦、成為你的行銷後盾！</div>
+            <div className='md:text-[40px] text-[36px] font-[200] mt-[28px]'>依產品特性打造專屬客製的行銷策略</div>
+            <div className='md:text-[40px] text-[36px] font-[200]'>從頭到尾一手包辦、成為你的行銷後盾！</div>
            
             <div className={styles['bg9']} />
           </div>
@@ -109,19 +109,19 @@ export default function About() {
       </div>
 
       <div className='py-[40px] z-10 relative w-full flex flex-col items-center h-[1155px] scale-[70%] md:scale-100'>
-        <div className='text-[72px] font-[400] text-primary font-myriad whitespace-nowrap'>你有以下行銷問題嗎？</div>
-        <div className={cn(styles['bg14'], 'flex flex-col justify-center text-white text-[48px] pl-[350px]')}>
+        <div className='scale-[60%] md:scale-100 text-[72px] font-[400] text-primary font-myriad whitespace-nowrap'>你有以下行銷問題嗎？</div>
+        <div className={cn(styles['bg14'], 'scale-[60%] md:scale-100 flex flex-col justify-center text-white text-[48px] pl-[350px]')}>
           <p>投放廣告卻看不見成效</p>
         </div>
-        <div className={cn(styles['bg15'], 'flex flex-col justify-center my-[20px] text-white text-[48px] pl-[350px]')}>
+        <div className={cn(styles['bg15'], 'scale-[60%] md:scale-100 flex flex-col justify-center my-[20px] text-white text-[48px] pl-[350px]')}>
           <p>行銷管道好多，</p>
           <p>但哪一個才適合我？</p>
         </div>
-        <div className={cn(styles['bg16'], 'flex flex-col justify-center text-white text-[48px] pl-[350px]')}>
+        <div className={cn(styles['bg16'], 'scale-[60%] md:scale-100 flex flex-col justify-center text-white text-[48px] pl-[350px]')}>
           <p>沒人手經營社群</p>
           <p>想不到發什麼內容</p>
         </div>
-        <div className={cn(styles['bg17'], 'mt-[40px]')}></div>
+        <div className={cn(styles['bg17'], 'scale-[60%] md:scale-100 mt-[40px]')}></div>
       </div>
     </div>
   );

@@ -20,13 +20,13 @@ export default function OurService() {
     <div id='service' className={styles['our-service-wrapper']}>
        <div className='w-full items-center flex flex-col pb-[60px]'>
         <div className={cn(styles['bg1'], 'text-white flex flex-col items-center justify-center')}>
-          <div className="text-[80px] font-[500] font-myriad">
+          <div className="text-[18vw] md:text-[80px] font-[500]">
             四大服務
           </div>
-          <div className="text-[36px] font-[400] font-myriad mt-[20px]">
+          <div className="text-[6vw] md:text-[36px] font-[400] font-myriad mt-[20px]">
             量身打造最賺錢的行銷策略
           </div>
-          <div className="text-[36px] font-[400] font-myriad">
+          <div className="text-[6vw] md:text-[36px] font-[400] font-myriad">
             有效解決各式雜症！
           </div>
           <div className={styles['bg2']}></div>

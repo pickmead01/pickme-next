@@ -1358,9 +1358,9 @@ a {
   position: relative;
   bottom: 0;
   height: 298px;
-  background-color: #53575a;
+  /* background-color: #53575a; */
   margin-top: 0;
-  font-family: Openhuninn;
+  /* font-family: Openhuninn; */
   letter-spacing: 4px;
   width: 100vw;
   margin-inline-start: 50%;
@@ -1368,7 +1368,7 @@ a {
 }
 
 .footer-wrapper.index-footer {
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 
 .footer-wrapper.marketing {

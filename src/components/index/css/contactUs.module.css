@@ -34,6 +34,8 @@
   width: var(--contact-us-width);
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   /* justify-content: space-between; */
   gap: 76px;
 }
@@ -66,7 +68,7 @@
 .contact-us-form {
   --contact-us-form-width: 403px;
   position: relative;
-  width: var(--contact-us-form-width);
+  /* width: var(--contact-us-form-width); */
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -91,15 +93,17 @@
   --enter-box-height: 43px;
   position: relative;
   width: var(--contact-us-form-width);
-  height: var(--enter-box-height);
-  background-image: url(./../../../assets/mobile/contact/enterBox.webp);
+  height: 60px;
+  /* background-image: url(./../../../assets/mobile/contact/enterBox.webp); */
   box-sizing: border-box;
   font-size: 16px;
 }
 
 .input-class {
   outline: none;
-  border: none;
+  /* border: none; */
+  border: 1px solid black;
+  border-radius: 30px;
   position: relative;
   background-color: transparent;
   height: 100%;
@@ -108,19 +112,21 @@
   box-sizing: border-box;
   font-size: 16px;
   line-height: 1.2;
+  margin-top: 12px;
 }
 
 
 .input-class:focus {
-  border: 0;
+  /* border: 0; */
   outline-width: 0;
   resize: none;
 }
 
 
 .enter-box.large {
+  height: 250px;
   --enter-box-height: 181px;
-  background-image: url(./../../../assets/mobile/contact/enterBox_large.webp);
+  /* background-image: url(./../../../assets/mobile/contact/enterBox_large.webp); */
 }
 
 
@@ -146,12 +152,12 @@
 
 .enter-checkbox-list {
   position: relative;
-  width: 100%;
+  width: 430px;
   display: flex;
-  flex-direction: column;
   box-sizing: border-box;
   gap: 20px;
-  padding-top: 1rem;
+  padding-top: 2rem;
+  flex-wrap: wrap;
 }
 
 
@@ -164,11 +170,12 @@
   position: absolute;
   top: -33px;
   width: 100%;
-  font-size: 24px;
+  font-size: 28px;
   letter-spacing: 4px;
-  color: var(--theme-color-hex);
-  font-weight: bold;
-  font-family: Openhuninn;
+  font-weight: 300;
+  /* color: var(--theme-color-hex); */
+  /* font-weight: bold; */
+  /* font-family: Openhuninn; */
 }
 
 /* .enter-checkbox-list::before {
@@ -180,16 +187,17 @@
 } */
 
 .enter-checkbox::before {
-  color: var(--theme-color-hex);
+  /* color: var(--theme-color-hex); */
   content: attr(data-title);
   display: block;
-  font-family: Openhuninn;
-  font-size: 20px;
-  font-weight: 700;
+  /* font-family: Openhuninn; */
+  font-size: 26px;
+  font-weight: 300;
+  /* font-weight: 700; */
   height: 2.5rem;
   letter-spacing: 4px;
   position: absolute;
-  width: 200px;
+  width: 275px;
   top: 50%;
   transform: translateY(-50%);
   left: 3.5rem;
@@ -197,22 +205,16 @@
 }
 
 .send-button {
-  position: relative;
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 0;
-  width: 102px;
-  height: 34px;
-  background-image: url(./../../../assets/button/send.webp);
   cursor: pointer;
   border: none;
-  background-color: transparent;
   outline: none;
   margin-top: -20px;
   align-self: flex-end;
-  filter: drop-shadow(0px 5px 5px rgba(0 0 0 /0.5));
-}
-
-.send-button:hover {
-  background-image: url(./../../../assets/button/send_h.webp);
 }
 
 .modal-close {
@@ -385,13 +387,34 @@
 
 
   .send-button {
-    position: relative;
     width: 11.5rem;
-    height: 3.7rem;
-    background-image: url(./../../../assets/mobile/contact/send.webp);
-    background-color: transparent;
-    margin-top: 0.4rem;
-
-    filter: unset;
+    height: 6rem;
   }
+}
+
+.bg1 {
+  background-image: url(./../../../assets/index/contact_bg_1.svg);
+  width: 1400px;
+  height: 583px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg2 {
+  background-image: url(./../../../assets/index/contact_bg_2.svg);
+  width: 39vw;
+  height: 393px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg3 {
+  background-image: url(./../../../assets/index/contact_bg_3.svg);
+  width: 440px;
+  height: 270px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

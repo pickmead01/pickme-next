@@ -1,6 +1,6 @@
 import HeaderLayout from '@components/layout/headerLayout'
 import FooterLayout from '@components/layout/footerLayout'
-import FBMessengerButton from '@components/layout/fbMessengerButton'
+// import FBMessengerButton from '@components/layout/fbMessengerButton'
 
 export default function Layout({ children }) {
 
@@ -9,7 +9,7 @@ export default function Layout({ children }) {
       <HeaderLayout />
       {children}
       <FooterLayout />
-      <FBMessengerButton />
+      {/* <FBMessengerButton /> */}
     </>
   )
 }

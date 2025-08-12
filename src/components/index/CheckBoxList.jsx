@@ -3,10 +3,13 @@ import React, { useCallback, useMemo } from 'react'
 export default function CheckBoxList({ styles, checkBoxListRef }) {
 
   const checkList = new Map([
-    ['advertising', { select: 0, alias: "廣告投放代理", name: "advertising" }],
-    ['socialMedia', { select: 0, alias: "社群口碑行銷", name: "socialMedia" }],
-    ['eventPlanning', { select: 0, alias: "企業活動規劃", name: "eventPlanning" }],
-    ['design', { select: 0, alias: "數位形象設計", name: "design" }],
+    ['google', { select: 0, alias: "Google廣告", name: "google" }],
+    ['image', { select: 0, alias: "圖片廣告素材製作", name: "image" }],
+    ['meta', { select: 0, alias: "Meta廣告", name: "meta" }],
+    ['socialMedia', { select: 0, alias: "社群內容經營", name: "socialMedia" }],
+    ['youtube', { select: 0, alias: "Youtube廣告", name: "youtube" }],
+    ['shortVideo', { select: 0, alias: "短影音廣告素材製作", name: "shortVideo" }],
+    ['line', { select: 0, alias: "LINE廣告", name: "line" }],
   ])
 
   const checkBoxList = useMemo(() => {
@@ -40,11 +43,13 @@ export default function CheckBoxList({ styles, checkBoxListRef }) {
   return <div data-title="合作需求（可複選）" className={`${styles['enter-checkbox-list']}`}>
     {
       checkBoxList.map((item, index) => {
-        return <div key={index} data-title={item.alias} className={`${styles['enter-checkbox']}`}>
-          <input
-            type='checkbox'
-            value={item.name}
-            onChange={onCheckBoxChange} />
+        return <div key={index} className='flex flex-col items-start justify-start gap-4 w-[200px]'>
+          <div data-title={item.alias} className={`${styles['enter-checkbox']}`}>
+            <input
+              type='checkbox'
+              value={item.name}
+              onChange={onCheckBoxChange} />
+          </div>
         </div>
       })
     }

@@ -12,7 +12,7 @@ const Partners = () => {
         return content;
     }
     return (
-        <div className="w-full flex flex-col items-center justify-center">
+        <div className="w-full flex flex-col items-center justify-center py-[100px]">
             <div className="text-[72px] font-[500] text-primary">客戶夥伴</div>
             <div className="text-[32px] font-[200] text-black text-center bg-[#F6BF96] rounded-full px-[40px] py-[4px]">
                 100+服務品牌，攜手創造亮眼成績！
