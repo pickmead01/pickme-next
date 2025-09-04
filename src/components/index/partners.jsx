@@ -1,4 +1,4 @@
-import styles from './css/Partners.module.css';
+import styles from './css/partner.module.css';
 import { cn } from '@utils/cn';
 
 const Partners = () => {
