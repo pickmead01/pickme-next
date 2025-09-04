@@ -3,9 +3,10 @@ import BtnMarketingWrapper from '@components/button/btnMarketingWrapper';
 
 function DeskTopBtnMarketingWrapper({
     showCategoryList,
-    btnProps
+    btnProps,
+    sitemapUrl
 }) {
-    return <BtnMarketingWrapper position='upper'>
+    return <BtnMarketingWrapper position='upper' sitemapUrl={sitemapUrl}>
         {showCategoryList && showCategoryList.map((category, index) =>
             <BtnMarketing key={index} {...btnProps(index, category)} />
         )}

@@ -11,6 +11,7 @@ function BtnMarketingWrapperByClientWidth({
     openTitleName,
     showCategoryList,
     btnActive,
+    sitemapUrl
 }) {
     const { dispatch } = useAppContext();
 
@@ -48,6 +49,7 @@ function BtnMarketingWrapperByClientWidth({
 
     const isDesktopOdMobile = clientWidth > 786
         ? <DeskTopBtnMarketingWrapper
+            sitemapUrl={sitemapUrl}
             showCategoryList={showCategoryList}
             btnProps={btnProps} />
         : <MobileBtnMarketingWrapper
@@ -55,9 +57,14 @@ function BtnMarketingWrapperByClientWidth({
             rightCategoryList={rightCategoryList}
             btnProps={btnProps} />
 
-    const isButtonOrHeaderWrapper = openTitleName
-        ? <CommonTitle openTitleName={openTitleName} />
-        : isDesktopOdMobile
+    // const isButtonOrHeaderWrapper = openTitleName
+    //     ? <CommonTitle openTitleName={openTitleName} />
+    //     : isDesktopOdMobile
+
+    const isButtonOrHeaderWrapper = <>
+    <CommonTitle openTitleName={openTitleName} />
+    {isDesktopOdMobile}
+    </>
 
     return isButtonOrHeaderWrapper
 }

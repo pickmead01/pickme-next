@@ -19,10 +19,10 @@ export default function MarketingPage({
     useInitial({ state, dispatch })
 
     const banner = sitemapUrl === '' && <MarketingBanner />
-    const buttonList = <MarketingButtonList categoryList={categoryList} openTitleName={openTitleName} />
+    const buttonList = <MarketingButtonList categoryList={categoryList} openTitleName={openTitleName} sitemapUrl={sitemapUrl}/>
     const cardWrapper = <CardWrapper commonPageItems={commonPageItems} />
     const cardFooter = <PageWrapper sitemapUrl={sitemapUrl} />
-    const popularArticles = <PopularArticles contents={popularContents} />
+    const popularArticles = <PopularArticles contents={popularContents} sitemapUrl={sitemapUrl}/>
 
     return (<>
         {banner}

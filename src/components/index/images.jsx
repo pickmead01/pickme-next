@@ -69,9 +69,19 @@ const triangleRangeOrange = new Map([
     ['mobile', import('@assets/mobile/content/flower.webp')],
 ])
 
+const triangleRangeOrange2 = new Map([
+    ['pc', import('@assets/content/dots.svg')],
+    ['mobile', import('@assets/content/dots.svg')],
+])
+
 const marketingBanner = new Map([
     ['pc', import('@assets/marketing/banner.webp')],
     ['mobile', import('@assets/marketing/banner.webp')],
+])
+
+const marketingBanner2 = new Map([
+    ['pc', import('@assets/marketing/banner2.svg')],
+    ['mobile', import('@assets/marketing/banner2.svg')],
 ])
 
 export {
@@ -87,5 +97,7 @@ export {
     contactUs,
     imageDown,
     triangleRangeOrange,
-    marketingBanner
+    triangleRangeOrange2,
+    marketingBanner,
+    marketingBanner2
 } 

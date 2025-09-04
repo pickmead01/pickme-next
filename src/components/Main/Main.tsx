@@ -10,7 +10,7 @@ function Main({ meta, children }: IMainProps) {
   return (
     <div className="w-full">
       {meta}
-      <div className="mx-auto overflow-y-hidden">
+      <div className="mx-auto overflow-y-hidden overflow-x-hidden">
         <Layout>
           <main className="relative z-10">{children}</main>
         </Layout>

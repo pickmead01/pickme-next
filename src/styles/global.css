@@ -313,7 +313,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 140px;
+  margin-top: 180px;
 }
 
 .marketing-banner+.btn-marketing-wrapper.upper {
@@ -384,7 +384,7 @@ a {
   height: var(--btn-marketing-height);
   border: var(--btn-marketing-border-width) solid var(--theme-color-hex);
   line-height: calc(var(--btn-marketing-height) - var(--btn-marketing-border-width) * 2);
-  border-radius: 12px;
+  border-radius: 9999px;
   font-size: 16px;
   font-family: Openhuninn;
   font-weight: bold;
@@ -415,18 +415,36 @@ a {
 }
 
 .btn-marketing.spots {
+  position: relative;
   --btn-marketing-spots-width: 332px;
   --btn-marketing-spots-offset: calc(-1*var(--btn-marketing-spots-width));
   border: unset;
   width: 400px;
   font-size: 36px;
   line-height: 1.2;
+  color: #ED781E
 }
 
-.btn-marketing.spots::before,
 .btn-marketing.spots::after {
+  background-image: url(./../assets/content/dots.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   content: "";
   display: block;
+  position: absolute;
+  width: 800px;
+  height: 29px;
+  /* background-color: red; */
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 160%);
+}
+
+/* .btn-marketing.spots::before,
+.btn-marketing.spots::after {
+  content: "";
+  display: none;
   position: absolute;
   width: var(--btn-marketing-spots-width);
   height: 115px;
@@ -435,9 +453,9 @@ a {
   background-size: contain;
   background-position: top center, 50%, 50%;
   background-repeat: no-repeat;
-}
+} */
 
-.btn-marketing.spots::before {
+/* .btn-marketing.spots::before {
   background-image: url(./../assets/marketing/morePage_spot.webp);
   left: var(--btn-marketing-spots-offset);
 }
@@ -445,7 +463,7 @@ a {
 .btn-marketing.spots::after {
   background-image: url(./../assets/marketing/morePage_spot_right.webp);
   right: var(--btn-marketing-spots-offset);
-}
+} */
 
 .card-wrapper {
   --card-height: 275px;
@@ -610,7 +628,7 @@ a {
 }
 
 .hot-content-container .main {
-  background-image: url(./../assets/marketing/title_popular_cn.svg);
+  background-image: url(./../assets/marketing/title_popular_cn2.svg);
 }
 
 .main::before,
@@ -633,13 +651,13 @@ a {
 }
 
 .main-en {
-  height: 80px;
+  height: 48px;
   width: 550px;
-  top: 115px;
+  top: 149px;
 }
 
 .hot-content-container .main-en {
-  background-image: url(./../assets/marketing/title_popular_eg.svg);
+  background-image: url(./../assets/marketing/title_popular_eg2.svg);
 }
 
 .hot-content-wrapper {
@@ -683,7 +701,7 @@ a {
   height: 100px;
   letter-spacing: 1.8px;
   text-align: left;
-  color: #fff;
+  color: #000;
   line-height: 1.2;
   box-sizing: border-box;
 }
@@ -695,34 +713,38 @@ a {
   left: calc(-38px - 24px);
   width: 38px;
   height: 38px;
+  background-color: #03BDFF;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 38px;
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
 .hot-left-side>.hot-content:nth-child(1):before {
-  background-image: url(./../assets/marketing/1_.webp);
+  content: '1';
 }
 
 .hot-left-side>.hot-content:nth-child(2)::before {
-  background-image: url(./../assets/marketing/2_.webp);
+  content: '2';
 }
 
 .hot-left-side>.hot-content:nth-child(3)::before {
-  background-image: url(./../assets/marketing/3_.webp);
+  content: '3';
 }
 
 .hot-right-side>.hot-content:nth-child(1)::before {
-  background-image: url(./../assets/marketing/4_.webp);
+  content: '4';
 }
 
 .hot-right-side>.hot-content:nth-child(2)::before {
-  background-image: url(./../assets/marketing/5_.webp);
+  content: '5';
 }
 
 .hot-right-side>.hot-content:nth-child(3)::before {
-  background-image: url(./../assets/marketing/6_.webp);
+  content: '6';
 }
 
 .hot-content::after {
@@ -769,7 +791,6 @@ a {
   top: 870px;
   left: 50%;
   transform: translateX(-50%);
-
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -782,6 +803,7 @@ a {
 }
 
 .page-wrapper .page {
+  border-radius: 999px;
   position: relative;
   width: 30px;
   height: 30px;
@@ -1119,7 +1141,7 @@ a {
   position: inherit;
   width: 100%;
   height: 39px;
-  background-image: url(./../assets/content/hot.webp);
+  background-image: url(./../assets/content/hot2.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1144,7 +1166,8 @@ a {
   width: 100%;
   height: 583px;
   margin-bottom: -1px;
-  background-color: var(--theme-color-hex);
+  /* background-color: var(--theme-color-hex); */
+  color: black
 }
 
 .popular-content-container::before,
@@ -1886,7 +1909,7 @@ a {
   .hot-content-container::after {
     content: '';
     position: absolute;
-    display: block;
+    display: none;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1985,7 +2008,21 @@ a {
     display: none;
   }
 
-  .hot-left-side>.hot-content:nth-child(1):before {
+  .hot-left-side>.hot-content:before {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hot-right-side>.hot-content:before {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* .hot-left-side>.hot-content:nth-child(1):before {
     background-image: url(./../assets/mobile/marketing/1_.webp);
   }
 
@@ -2007,7 +2044,7 @@ a {
 
   .hot-right-side>.hot-content:nth-child(3)::before {
     background-image: url(./../assets/mobile/marketing/6_.webp);
-  }
+  } */
 
   .bubble-box {
     display: none;
@@ -2155,12 +2192,12 @@ a {
     text-align: center;
   }
 
-  .btn-marketing.spots::before,
+  /* .btn-marketing.spots::before,
   .btn-marketing.spots::after {
     height: 10rem;
     top: 2rem;
     transform: unset;
-  }
+  } */
 
   .top-banner-wrapper {
     --banner-top-offset: 10rem;
@@ -2501,4 +2538,13 @@ a {
   text-align: left;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.content-pickme-logo {
+  background-image: url(./../assets/content/pickme.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 123px;
+  height: 306px;
 }

@@ -4,7 +4,8 @@ import BtnMarketingWrapperByClientWidth from './BtnMarketingWrapperByClientWidth
 
 export default function MarketingButtonList({
   categoryList,
-  openTitleName
+  openTitleName,
+  sitemapUrl
 }) {
 
   const { state } = useAppContext();
@@ -24,5 +25,6 @@ export default function MarketingButtonList({
     openTitleName={openTitleName}
     showCategoryList={showCategoryList}
     btnActive={btnActive}
+    sitemapUrl={sitemapUrl}
   />
 }

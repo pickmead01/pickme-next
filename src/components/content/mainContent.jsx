@@ -58,6 +58,7 @@ export default function MainContent({
             <HotTrendWrapper
                 position="content"
                 popularTagList={popularTagList} />
+            <div className="content-pickme-logo absolute bottom-[40px] right-0 hidden md:block"/>
         </div>
     );
 

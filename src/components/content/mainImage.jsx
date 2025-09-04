@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useMemo } from "react";
-import { triangleRangeOrange } from "@components/index/images";;
+import { triangleRangeOrange2 } from "@components/index/images";;
 import useLoadImage from "@services/useLoadImage";
 import Iframe from "react-iframe";
 
@@ -18,7 +18,7 @@ export default function MainImage({
     }, [isVideo, mainImage])
     console.log("🚀 ~ file: mainImage.jsx:12 ~ mainImage:", mainImage)
     console.log("🚀 ~ file: mainImage.jsx:12 ~ isVideo:", isVideo)
-    const troImage = useLoadImage(triangleRangeOrange);
+    const troImage = useLoadImage(triangleRangeOrange2);
 
     return (
         <div className="top-banner-wrapper">
@@ -46,8 +46,8 @@ export default function MainImage({
                         }}
                     />)}
             {troImage && <Image className="triangle-range_orange"
-                placeholder="blur"
-                blurDataURL={troImage.default.blurDataURL}
+                // placeholder="blur"
+                // blurDataURL={troImage.default.blurDataURL}
                 src={troImage.default.src}
                 width={troImage.default.width}
                 height={troImage.default.height}

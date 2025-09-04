@@ -16,9 +16,9 @@ const InnerHotTrendWrapper = ({
 
     return <div className={`content-right-side ${position}`}>
         <div className="hot-trend" />
-        <div className="hot-tag-wrapper">
+        {/* <div className="hot-tag-wrapper">
             {content}
-        </div>
+        </div> */}
     </div>;
 }
 

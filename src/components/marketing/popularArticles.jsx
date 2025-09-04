@@ -1,13 +1,15 @@
 import Link from 'next/link';
 import React from 'react';
 
-export default function PopularArticles({ contents }) {
+export default function PopularArticles({ contents, sitemapUrl }) {
   return contents.length > 0 && <div data-title="熱門文章" className='hot-content-container'>
-    <div className='main' />
+    {sitemapUrl === '' && <>
+      <div className='main' />
     <div className='main-en' />
     <div className='hot-content-wrapper'>
       <HotContents contents={contents} />
     </div>
+    </>}
   </div>
 }
 

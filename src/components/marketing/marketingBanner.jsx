@@ -1,13 +1,13 @@
 import { useMemo } from "react";
 import Image from "next/image";
-import { marketingBanner } from "@components/index/images";;
+import { marketingBanner2 } from "@components/index/images";
 import useLoadImage from "@services/useLoadImage";
 import { useAppContext } from "@store/context";
 
 
 export default function MarketingBanner() {
     const { state } = useAppContext();
-    const banner = useLoadImage(marketingBanner);
+    const banner = useLoadImage(marketingBanner2);
 
     const style = useMemo(() => {
         const baseStyle = {
@@ -34,18 +34,18 @@ export default function MarketingBanner() {
             {banner &&
                 (state.clientWidth <= 768
                     ? <Image
-                        placeholder="blur"
+                        // placeholder="blur"
                         src={banner.default.src}
-                        blurDataURL={banner.default.blurDataURL}
+                        // blurDataURL={banner.default.blurDataURL}
                         width={banner.default.width}
                         height={banner.default.height}
                         alt={''}
                         style={style}
                     />
                     : <Image
-                        placeholder="blur"
+                        // placeholder="blur"
                         src={banner.default.src}
-                        blurDataURL={banner.default.blurDataURL}
+                        // blurDataURL={banner.default.blurDataURL}
                         width={banner.default.width}
                         height={banner.default.height}
                         alt={''}
