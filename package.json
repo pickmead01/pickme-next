@@ -11,7 +11,7 @@
     "build:uat:local": "env-cmd -f .env.staging.local yarn build",
     "build:prod": "env-cmd -f .env.production yarn build",
     "build:prod:local": "env-cmd -f .env.production.local yarn build",
-    "start": "next start -p 3010",
+    "start": "next start -p 3000",
     "lint": "next lint",
     "build:serve": "next build & next start -p 3000 -H 10.42.208.19"
   },
