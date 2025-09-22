@@ -30,13 +30,13 @@ const nextConfig = {
             },
             {
                 protocol: 'http',
-                hostname: 'uat-apidb.musense.tw',
+                hostname: 'uat-apidb.pickme.tw',
                 port: '',
                 pathname: '/home/**',
             },
             {
                 protocol: 'https',
-                hostname: 'bd.musense.tw',
+                hostname: 'bd.pickme.tw',
                 port: '',
                 pathname: '/home/**',
             },
