@@ -6,16 +6,19 @@ import sendEmail from "@services/emailService";
 import EnterBox from "./EnterBox";
 import CheckBoxList from './CheckBoxList';
 import Image from 'next/image';
+import contactUsTitle from '@assets/index/PICKME_WEB-91.svg';
+import contactUsSubTitle from '@assets/index/PICKME_WEB-92.svg';
 import { contactUs, imageDown } from "@components/index/images";
 import useLoadImage from "@services/useLoadImage";
 import { createPortal } from 'react-dom'
 import useModalRootRef from '@services/useModalRootRef'
 
 const enterBoxList = [
-  { title: '公司/品牌名稱', name: 'company-name', typ: 'text' },
-  { title: '姓名', name: 'name', typ: 'text' },
-  { title: '電話', name: 'phone', typ: 'tel' },
-  { title: '電子信箱', name: 'email', typ: 'email' },
+  { title: '姓名', name: 'name', type: 'text' },
+  { title: '電子信箱', name: 'email', type: 'email' },
+  { title: '聯絡電話', name: 'phone', type: 'tel' },
+  { title: '品牌/公司名稱', name: 'company-name', type: 'text' },
+  { title: '品牌官網', name: 'website', type: 'url' },
 ]
 
 export default function ContactUs() {
@@ -47,10 +50,11 @@ export default function ContactUs() {
     const askString = getAskString(checkBoxListRef.current)
     const userData = Object.fromEntries(formData);
     const templateParams = {
-      companyName: userData['company-name'],
       name: userData.name,
-      phone: userData.phone,
       email: userData.email,
+      phone: userData.phone,
+      companyName: userData['company-name'],
+      website: userData.website,
       askString: askString,
       ask: userData.ask
     };
@@ -103,10 +107,13 @@ export default function ContactUs() {
       <div className="w-full relative">
         <div className={cn(styles['bg1'], 'relative')}>
           <div className='text-white flex flex-col items-start justify-center absolute top-[80px] left-[50vw] md:left-[300px] md:translate-x-0 translate-x-[-50%]'>
-            <div className="text-[60px] font-[500] md:text-[80px]">聯絡我們</div>
+            
+            <Image src={contactUsTitle.src} className='mb-[20px]' alt="聯絡我們" width={320} height={100} />
+            <Image src={contactUsSubTitle.src} alt="聯絡我們" width={520} height={100} />
+            {/* <div className="text-[60px] font-[500] md:text-[80px]">聯絡我們</div>
             <div className="text-[24px] font-[400] md:text-[40px]">免費策略諮詢</div>
             <div className="text-[24px] font-[200] md:text-[40px]">立即留下您的聯絡資訊</div>
-            <div className="text-[24px] font-[200] md:text-[40px]">我們將安排專業顧問與您接洽</div>
+            <div className="text-[24px] font-[200] md:text-[40px]">我們將安排專業顧問與您接洽</div> */}
           </div>
         </div>
         <div className={cn(styles['bg2'], 'hidden xl:block absolute right-0 bottom-0')}></div>

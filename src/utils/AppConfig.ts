@@ -1,7 +1,7 @@
   // FIXME: Update this configuration file based on your project information
 
 export const AppConfig = {
-    site_name: 'Musense',
+    site_name: 'Pickme',
     title: 'Nextjs Starter',
     description: 'Starter code for your Nextjs Boilerplate with Tailwind CSS',
     locale: 'zh-tw',

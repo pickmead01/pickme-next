@@ -5,4 +5,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.musense.tw/sitemap.xml
+Sitemap: https://www.pickme.tw/sitemap.xml

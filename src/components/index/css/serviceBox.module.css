@@ -125,10 +125,10 @@
 }
 
 .container {
-  background-image: url(./../../../assets/index/service_bg_3.svg);
+  /* background-image: url(./../../../assets/index/service_bg_3.svg);
   width: 447px;
   height: 277px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }

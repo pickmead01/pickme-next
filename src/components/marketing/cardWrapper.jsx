@@ -6,7 +6,6 @@ import useSetCommonPageItems from "@services/useSetCommonPageItems";
 export default function CardWrapper({ commonPageItems }) {
     const { state, dispatch } = useAppContext();
     useSetCommonPageItems(commonPageItems, dispatch)
-
     const content = state.viewContents
         ? state.viewContents.map((content, index) =>
             <Card key={index} content={content} />)

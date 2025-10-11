@@ -82,11 +82,11 @@
 }
 
 .left-form {
-  gap: 85px;
+  gap: 62px;
 }
 
 .right-form {
-  gap: 76px;
+  gap: 90px;
 }
 
 .enter-box {
@@ -112,7 +112,6 @@
   box-sizing: border-box;
   font-size: 16px;
   line-height: 1.2;
-  margin-top: 12px;
 }
 
 
@@ -125,20 +124,25 @@
 
 .enter-box.large {
   height: 250px;
+  margin-top: 26px;
   --enter-box-height: 181px;
   /* background-image: url(./../../../assets/mobile/contact/enterBox_large.webp); */
 }
 
 
 .enter-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  height: 2.5rem;
-  width: 2.5rem;
-  background-image: url(./../../../assets/mobile/contact/box.webp);
+  height: 28px;
+  width: 28px;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
 .enter-checkbox>input[type='checkbox'] {
-  padding: 12px;
+  padding: 8px;
   margin: unset;
   appearance: none;
   cursor: pointer;
@@ -146,7 +150,7 @@
 
 .enter-checkbox>input[type='checkbox']:checked {
   border: 1px solid black;
-  border-radius: 3px;
+  border-radius: 50%;
   background-color: var(--theme-color-hex);
 }
 
@@ -168,11 +172,11 @@
   display: block;
   left: 0px;
   position: absolute;
-  top: -33px;
+  top: -42px;
   width: 100%;
-  font-size: 28px;
-  letter-spacing: 4px;
-  font-weight: 300;
+  font-size: 24px;
+  /* letter-spacing: 4px; */
+  /* font-weight: 300; */
   /* color: var(--theme-color-hex); */
   /* font-weight: bold; */
   /* font-family: Openhuninn; */
@@ -191,11 +195,11 @@
   content: attr(data-title);
   display: block;
   /* font-family: Openhuninn; */
-  font-size: 26px;
-  font-weight: 300;
+  font-size: 24px;
+  /* font-weight: 300; */
   /* font-weight: 700; */
   height: 2.5rem;
-  letter-spacing: 4px;
+  /* letter-spacing: 4px; */
   position: absolute;
   width: 275px;
   top: 50%;
@@ -360,22 +364,26 @@
   }
 
   .enter-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    height: 2.5rem;
-    width: 2.5rem;
-    background-image: url(./../../../assets/mobile/contact/box.webp);
+    height: 28px;
+    width: 28px;
+    border: 1px solid black;
+    border-radius: 50%;
   }
 
 
   .enter-checkbox>input[type='checkbox'] {
-    padding: 1.2rem;
+    padding: 8px;
     margin: unset;
     appearance: none;
   }
 
   .enter-checkbox>input[type='checkbox']:checked {
     border: 1px solid black;
-    border-radius: 3px;
+    border-radius: 50%;
     background-color: var(--theme-color-hex);
   }
 

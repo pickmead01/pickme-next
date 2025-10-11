@@ -46,6 +46,7 @@ const mainReducer = (
             };
         }
         case ReducerActionEnum.SET_ALL_CONTENTS: {
+            console.log('erte', action.payload.contents)
             const sortedContents = action.payload.contents
                 ? action.payload.contents
                     .filter(item => item.hidden === false && item.homeImagePath)

@@ -8,7 +8,7 @@ export default function FbMessengerButton() {
     <div className={styles['fb-container']}>
       <Link
         className={styles['fb-button']}
-        href="http://m.me/musense.marketing"
+        href="https://m.me/pickme.no1"
         target="_blank"
         rel="noreferrer noopener"
       >

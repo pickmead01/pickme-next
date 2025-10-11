@@ -5,4 +5,4 @@ Disallow: /fonts/
 User-agent: *
 Allow: /
 
-Sitemap: http://uat-officialwebsite.musense.tw/sitemap.xml
+Sitemap: http://uat-officialwebsite.pickme.tw/sitemap.xml

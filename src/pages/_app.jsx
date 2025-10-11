@@ -1,8 +1,17 @@
 import { Context } from '@store/context';
 import '@styles/global.css';
 import Script from 'next/script';
+import { useEffect } from 'react';
+import { logEnvironmentStatus } from '@utils/envCheck';
 
 export default function MyApp({ Component, pageProps }) {
+  // 在開發環境中檢查環境配置
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'development') {
+      logEnvironmentStatus();
+    }
+  }, []);
+
   return (
     <>
       <Script id="google-tag-manager" strategy="afterInteractive">

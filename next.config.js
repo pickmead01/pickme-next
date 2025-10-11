@@ -40,6 +40,18 @@ const nextConfig = {
                 port: '',
                 pathname: '/home/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'bd.pickme.tw',
+                port: '',
+                pathname: '/home/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'bd.musense.tw',
+                port: '',
+                pathname: '/home/**',
+            },
         ]
     },
     compiler: {

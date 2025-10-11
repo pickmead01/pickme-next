@@ -7,7 +7,7 @@ export default function CheckBoxList({ styles, checkBoxListRef }) {
     ['image', { select: 0, alias: "圖片廣告素材製作", name: "image" }],
     ['meta', { select: 0, alias: "Meta廣告", name: "meta" }],
     ['socialMedia', { select: 0, alias: "社群內容經營", name: "socialMedia" }],
-    ['youtube', { select: 0, alias: "Youtube廣告", name: "youtube" }],
+    ['youtube', { select: 0, alias: "YouTube廣告", name: "youtube" }],
     ['shortVideo', { select: 0, alias: "短影音廣告素材製作", name: "shortVideo" }],
     ['line', { select: 0, alias: "LINE廣告", name: "line" }],
   ])
@@ -40,7 +40,7 @@ export default function CheckBoxList({ styles, checkBoxListRef }) {
 
   }, [checkBoxListRef, checkList])
 
-  return <div data-title="合作需求（可複選）" className={`${styles['enter-checkbox-list']}`}>
+  return <div data-title="諮詢項目（可複選）" className={`${styles['enter-checkbox-list']}`}>
     {
       checkBoxList.map((item, index) => {
         return <div key={index} className='flex flex-col items-start justify-start gap-4 w-[200px]'>

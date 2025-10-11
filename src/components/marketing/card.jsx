@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import tempImage from '@assets/index/社群內容.jpg';
 
 export default function Card({ content }) {
 
@@ -30,7 +31,7 @@ export default function Card({ content }) {
       <div>
         {homeImagePath && <Image
           className='card-img'
-          src={homeImagePath}
+          src={tempImage}
           width={314}
           height={178}
           alt={altText || ''}
