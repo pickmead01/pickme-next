@@ -105,9 +105,8 @@ export default function ContactUs() {
         )
       }
       <div className="w-full relative">
-        <div className={cn(styles['bg1'], 'relative')}>
+        <div className={cn(styles['bg1'], '')}>
           <div className='text-white flex flex-col items-start justify-center absolute top-[80px] left-[50vw] md:left-[300px] md:translate-x-0 translate-x-[-50%]'>
-            
             <Image src={contactUsTitle.src} className='mb-[20px]' alt="聯絡我們" width={320} height={100} />
             <Image src={contactUsSubTitle.src} alt="聯絡我們" width={520} height={100} />
             {/* <div className="text-[60px] font-[500] md:text-[80px]">聯絡我們</div>

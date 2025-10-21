@@ -84,8 +84,8 @@ export default function About() {
           <div className={cn(styles['bg8'], 'flex flex-col items-center justify-center text-white')}>
             <div className={styles['bg10']} />
             <div className={styles['bg11']} />
-            <Image src={aboutTitle.src} alt="全方位行銷團隊" width={532} height={100} className='mb-[40px]' />
-            <Image src={aboutContent.src} alt="全方位行銷團隊" width={760} height={100} />
+            <Image src={aboutTitle.src} alt="全方位行銷團隊" width={532} height={100} className='mb-[40px] scale-[80%] md:scale-100' />
+            <Image src={aboutContent.src} alt="全方位行銷團隊" width={760} height={100} className='scale-[80%] md:scale-100' />
 
             {/* <div className='text-[32px] md:text-[40px] font-[200] flex items-center mt-[28px]'>
               Pickme痞米團隊擁有
