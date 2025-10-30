@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export default function PopularArticles({ contents, sitemapUrl }) {
-  return contents.length > 0 && <div data-title="熱門文章" className='hot-content-container'>
+  return contents && contents.length > 0 && <div data-title="熱門文章" className='hot-content-container'>
     {sitemapUrl === '' && <>
       <div className='main' />
     <div className='main-en' />

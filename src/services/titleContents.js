@@ -148,9 +148,9 @@ export async function getTitleContents(payload) {
           }
         }) : null,
         categories: {
-          _id: content.categories._id,
-          name: content.categories.name,
-          sitemapUrl: getRenamedContent(content.categories.sitemapUrl) || '#'
+          _id: content.categories?._id || null,
+          name: content.categories?.name || null,
+          sitemapUrl: getRenamedContent(content.categories?.sitemapUrl || '') || '#'
         },
         sitemapUrl: getRenamedContent(content.sitemapUrl) || '#',
       }
