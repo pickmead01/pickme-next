@@ -318,7 +318,7 @@ a {
 }
 
 .marketing-banner+.btn-marketing-wrapper.upper {
-  margin-top: 30px;
+  margin-top: 100px;
   gap: 5rem;
 }
 
@@ -354,7 +354,6 @@ a {
 }
 
 .btn-marketing-wrapper.upper {
-  margin-top: calc(var(--header-height) + 30px);
   gap: 34px;
 }
 
@@ -384,6 +383,10 @@ a {
   box-sizing: border-box;
 }
 
+.btn-marketing-wrapper.upper>.btn-marketing:not(.spots) {
+  border: var(--btn-marketing-border-width) solid var(--theme-color-hex);
+}
+
 .btn-marketing:disabled {
   background-color: #aaa;
   border-color: #aaa;
@@ -405,6 +408,7 @@ a {
 }
 
 .btn-marketing.spots {
+  margin-top: calc(var(--header-height) + 30px);
   position: relative;
   --btn-marketing-spots-width: 332px;
   --btn-marketing-spots-offset: calc(-1*var(--btn-marketing-spots-width));
@@ -414,7 +418,7 @@ a {
   line-height: 1.2;
   color: #ED781E
 }
-
+/* 
 .btn-marketing.spots::after {
   background-image: url(./../assets/content/dots.svg);
   background-size: contain;
@@ -425,11 +429,10 @@ a {
   position: absolute;
   width: 800px;
   height: 29px;
-  /* background-color: red; */
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 160%);
-}
+} */
 
 /* .btn-marketing.spots::before,
 .btn-marketing.spots::after {
@@ -464,8 +467,8 @@ a {
   top: 200px;
   left: 50%; */
   /* transform: translateX(-50%); */
+  height: 610px;
   margin: 30px auto 0;
-  height: fit-content;
   display: grid;
   grid-template-columns: repeat(var(--card-wrapper-repeat), 1fr);
   justify-items: center;
@@ -771,7 +774,7 @@ a {
 .page-wrapper {
   position: absolute;
   margin: unset;
-  top: 870px;
+  top: 1000px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -826,7 +829,7 @@ a {
 }
 
 .page-wrapper+.btn-marketing-wrapper {
-  top: 950px;
+  top: 200px;
 }
 
 .page-wrapper .page.active {
@@ -1152,7 +1155,23 @@ a {
   height: 583px;
   margin-bottom: -1px;
   /* background-color: var(--theme-color-hex); */
+  margin-top: 250px;
   color: black
+}
+
+.hot-content-container::before {
+  background-image: url(/_next/static/media/dots.1937a07b.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 800px;
+  height: 29px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .popular-content-container::before,

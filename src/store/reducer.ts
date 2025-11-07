@@ -49,7 +49,7 @@ const mainReducer = (
             console.log('erte', action.payload.contents)
             const sortedContents = action.payload.contents
                 ? action.payload.contents
-                    .filter(item => item.hidden === false && item.homeImagePath)
+                    .filter(item => item.hidden === false)
                     .sort((item1, item2) =>
                         (new Date(item2.publishedAt) as any) - (new Date(item1.publishedAt) as any)
                     )

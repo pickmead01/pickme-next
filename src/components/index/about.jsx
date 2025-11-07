@@ -4,6 +4,8 @@ import AOS from 'aos';
 import Link from "next/link";
 import { cn } from '@utils/cn';
 import 'aos/dist/aos.css';
+import nav_logo from '@assets/content/PICKME_WEB_B-01.svg';
+
 import Image from 'next/image';
 import title from '@assets/index/PICKME_WEB＿２_0801-04.svg';
 import subTitle from '@assets/index/PICKME_WEB＿２_0801-05.svg';
@@ -35,22 +37,22 @@ export default function About() {
   }, []);
   return (
     <div className={styles['about-us']}>
-      <div className="flex flex-col items-center w-full h-auto md:h-[1724px] md:max-h-[1724px] relative bg-gradient-to-b from-[#fff] from-30% to-[#ED781E]">
+      <div className="flex flex-col items-center w-full h-auto md:h-[1724px] md:max-h-[1724px] relative bg-gradient-to-b from-[#fff] from-50% to-[#ED781E] md:mt-[100px]">
         <div className='relative mt-24 z-10 md:mr-80 scale-[60%] md:scale-100'>
           <div className={styles['logo-color']} />
           <div className="flex flex-col items-center">
             <Image 
               src={title.src}
               alt="抓住流量 掌握商機"
-              width={510}
-              height={69}
+              width={510 * 1.1}
+              height={69 * 1.1}
               className="mb-[30px]"
             />
             <Image 
               src={subTitle.src}
               alt="Pickme投放精準出擊!"
-              width={350}
-              height={29}
+              width={350 * 1.1}
+              height={29 * 1.1}
               className="mb-[30px]"
             />
             <Link
@@ -66,7 +68,7 @@ export default function About() {
           <div className={styles['bg2']}></div>
         </div>
         <div 
-          className={cn('w-[900px] h-[790px] top-[-200px] md:top-[55px] relative md:ml-[600px] md:absolute ', styles['bg-container'])}
+          className={cn('w-[900px] h-[790px] top-[-200px] md:top-[55px] md:ml-[600px] md:absolute ', styles['bg-container'])}
         >
             <div className={styles['bg12']}></div>
             <div className={styles['bg3']}></div>
@@ -75,13 +77,27 @@ export default function About() {
             <div className={styles['bg5']}></div>
             <div className={styles['bg6']}></div>
           </div>
-          <div className={cn(styles['bg13'], 'hidden md:block')}></div>
+          <div className= "hidden md:flex top-[807px] overflow-hidden gap-[48px] absolute w-full h-[60px] bg-[#ED781E] left-0 z-10 flex-row">
+          {Array.from({ length: 20 }).map((_, i) => (
+            <Image
+              key={i}
+              src={nav_logo.src}
+              alt="Musense Marketing"
+              width={100}
+              height={100}
+            />
+          ))}
+          </div>
+          <div className={cn(styles['bg13'], 'hidden md:block')}>
+         
+          </div>
       </div>
 
       <div id='about' className='md:pb-[100px] flex flex-col items-center w-full mt-[300px] md:mt-[-657px] relative bg-gradient-to-br from-transparent from-30% to-[#DCDCDC]'>
         <div className='w-full min-w-[1920px] flex flex-col items-center  md:scale-100 scale-[60%] origin-top'>
           {/* <div className={styles['bg7']} /> */}
           <div className={cn(styles['bg8'], 'flex flex-col items-center justify-center text-white')}>
+            <div className={styles['bg14']} />
             <div className={styles['bg10']} />
             <div className={styles['bg11']} />
             <Image src={aboutTitle.src} alt="全方位行銷團隊" width={532} height={100} className='mb-[40px] scale-[80%] md:scale-100' />

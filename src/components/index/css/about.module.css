@@ -2,7 +2,7 @@
   position: relative;
   /* width: 100%; */
   height: fit-content;
-  margin-top: calc(var(--header-height) + 26px);
+  margin-top: calc(var(--header-height));
   overflow-x: hidden;
   overflow-y: visible;
 }
@@ -277,9 +277,9 @@
 }
 
 .logo-color {
-  width: 186px;
+  width: 223px;
   background-image: url(./../../../assets/logo/logo_color.svg);
-  height: 42px;
+  height: 51px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -334,15 +334,15 @@
 }
 
 .bg3 {
-  background-image: url(./../../../assets/index/about_bg_3.png);
-  width: 600px;
-  height: 600px;
+  background-image: url(./../../../assets/index/PICKME_WEB＿２_0801-07.svg);
+  width: 300px;
+  height: 300px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   left: 280px;
-  top: 200px;
+  top: 340px;
 }
 
 .bg4 {
@@ -521,4 +521,16 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.bg14 {
+  position: absolute;
+  background-image: url(./../../../assets/index/PICKME_WEB＿２_0801-14.svg);
+  width: 957px;
+  height: 427px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -131px;
+  left: 457px;
 }

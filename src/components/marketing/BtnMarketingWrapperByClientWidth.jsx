@@ -60,10 +60,9 @@ function BtnMarketingWrapperByClientWidth({
     // const isButtonOrHeaderWrapper = openTitleName
     //     ? <CommonTitle openTitleName={openTitleName} />
     //     : isDesktopOdMobile
-
     const isButtonOrHeaderWrapper = <>
-    <CommonTitle openTitleName={openTitleName} />
-    {isDesktopOdMobile}
+    {openTitleName && <CommonTitle openTitleName={openTitleName} />}
+    {!sitemapUrl && isDesktopOdMobile}
     </>
 
     return isButtonOrHeaderWrapper

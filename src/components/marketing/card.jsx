@@ -29,9 +29,9 @@ export default function Card({ content }) {
       href={route}
     >
       <div>
-        {homeImagePath && <Image
+         <Image
           className='card-img'
-          src={tempImage}
+          src={homeImagePath || tempImage}
           width={314}
           height={178}
           alt={altText || ''}
@@ -40,7 +40,7 @@ export default function Card({ content }) {
             objectPosition: 'center'
           }}
         />
-        }
+        
         <div className='card-content'>
           <span className='ellipsis'>
             {title}

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import partnerTitle from '@assets/index/PICKME_WEB-44.svg';
 import partnerSubTitle from '@assets/index/PICKME_WEB-45.svg';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css';
 
@@ -40,14 +40,14 @@ const Partners = () => {
     return (
       <div className="w-full flex flex-col items-center justify-center gap-[20px]">
         {/* 上排 5 個 */}
-        <div className="flex items-center justify-center gap-[20px] flex-wrap">
+        <div className="flex items-center justify-center md:gap-[80px] gap-[20px] flex-wrap">
           {topRow.map((partnerId) => (
             <div
               key={partnerId}
               className={cn(
                 styles[`partner-item-${partnerId}`],
                 styles['logo'],
-                'w-[120px] h-[100px] flex items-center justify-center'
+                'w-[120px] h-[100px] flex items-center justify-center md:w-[140px] md:h-[120px]'
               )}
             ></div>
           ))}
@@ -55,14 +55,14 @@ const Partners = () => {
         
         {/* 下排 5 個 */}
         {bottomRow.length > 0 && (
-          <div className="flex items-center justify-center gap-[20px] flex-wrap">
+          <div className="flex items-center justify-center md:gap-[80px] gap-[20px] flex-wrap">
             {bottomRow.map((partnerId) => (
               <div
                 key={partnerId}
                 className={cn(
                   styles[`partner-item-${partnerId}`],
                   styles['logo'],
-                  'w-[120px] h-[100px] flex items-center justify-center'
+                  'w-[120px] h-[100px] flex items-center justify-center md:w-[140px] md:h-[120px]'
                 )}
               ></div>
             ))}
@@ -88,11 +88,15 @@ const Partners = () => {
         height={100}
       />
       
-      <div className="mt-[40px] w-full max-w-[840px]">
+      <div className="mt-[40px] w-full max-w-[1040px]">
         <Swiper
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           pagination={{
             clickable: true,
+          }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
           }}
           spaceBetween={30}
           slidesPerView={1}

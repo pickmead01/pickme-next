@@ -47,18 +47,46 @@ const HeaderScrollLink = ({
   const color = name === 'marketing' ? 'blue' : 'orange'
   const mainClassName = className ? className : styles['nav-button']
 
-  return (
-    <Link
-      title={navMap.get(name).name.ch}
-      onClick={(e) => scrollHandler(e, destRef.current)}
-      href={href}
-      className={mainClassName}
-    >
-      <div className={styles['nav-text-wrapper']}>
-        <Image src={buttonMap.get(navMap.get(name).name.en)} alt="buttonAbout" width="auto" height={25} />
-      </div>
-    </Link>
-  )
+  if (href === '/trend') {
+    return (
+      <Link
+        title={navMap.get(name).name.ch}
+        href={href}
+        className={mainClassName}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className={styles['nav-text-wrapper']}>
+          <Image
+            src={buttonMap.get(navMap.get(name).name.en)}
+            alt="buttonAbout"
+            width={100}
+            height={25}
+            style={{ height: '25px', width: 'auto' }}
+          />
+        </div>
+      </Link>
+    );
+  } else {
+    return (
+      <Link
+        title={navMap.get(name).name.ch}
+        onClick={(e) => scrollHandler(e, destRef.current)}
+        href={href}
+        className={mainClassName}
+      >
+        <div className={styles['nav-text-wrapper']}>
+          <Image
+            src={buttonMap.get(navMap.get(name).name.en)}
+            alt="buttonAbout"
+            width={100}
+            height={25}
+            style={{ height: '25px', width: 'auto' }}
+          />
+        </div>
+      </Link>
+    );
+  }
 }
 
 export default HeaderScrollLink
