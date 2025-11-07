@@ -18,7 +18,7 @@ export default function MarketingPage({
     const { state, dispatch } = useAppContext();
     useInitial({ state, dispatch })
     
-    // // 假資料用於測試
+    // 假資料用於測試
     // const mockPopularContents = [
     //     {
     //         title: "2024年最新SEO優化策略：提升網站排名的10個關鍵技巧",
