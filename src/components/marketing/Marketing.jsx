@@ -49,7 +49,7 @@ export default function MarketingPage({
     const buttonList = <MarketingButtonList categoryList={categoryList} openTitleName={openTitleName} sitemapUrl={sitemapUrl}/>
     const cardWrapper = <CardWrapper commonPageItems={commonPageItems} />
     const cardFooter = <PageWrapper sitemapUrl={sitemapUrl} />
-    const popularArticles = <PopularArticles contents={popularContents || mockPopularContents} sitemapUrl={sitemapUrl}/>
+    const popularArticles = <PopularArticles contents={popularContents} sitemapUrl={sitemapUrl}/>
 
     return (<>
         {banner}
